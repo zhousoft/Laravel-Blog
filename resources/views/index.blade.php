@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cn">
+<html lang="zh-cn">
 
   <head>
 
@@ -12,17 +12,14 @@
 
     <link href={{asset("/css/blog-home.css")}} rel="stylesheet">
     <!-- Bootstrap core CSS -->
-    {{--  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">  --}}
+    
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" >
 
     <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
     {{-- <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> --}}
 
-<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/popper.js/1.12.5/esm/popper.min.js"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    
     <!-- Custom styles for this template -->
     
 
@@ -128,7 +125,7 @@
         <div class="col-md-4">
 
           <!-- Search Widget -->
-          <div class="card my-4">
+          {{--  <div class="card my-4">
             <h5 class="card-header">Search</h5>
             <div class="card-body">
               <div class="input-group">
@@ -138,7 +135,7 @@
                 </span>
               </div>
             </div>
-          </div>
+          </div>  --}}
 
           <!-- Categories Widget -->
           <div class="card my-4">
@@ -198,7 +195,9 @@
       </div>
       <!-- /.container -->
     </footer>
-
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
     <!-- Bootstrap core JavaScript -->
     {{--  <script src="vendor/jquery/jquery.min.js"></script>  --}}
     {{--  <script src="vendor/popper/popper.min.js"></script>  --}}
