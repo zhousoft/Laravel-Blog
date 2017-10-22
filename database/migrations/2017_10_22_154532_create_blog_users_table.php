@@ -16,8 +16,8 @@ class CreateBlogUsersTable extends Migration
         Schema::create('blog_users', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->string('user_name');
-            $table->string('user_pass');
+            $table->string('user_name',20);
+            $table->string('user_pass',50);
 
         });
     }
