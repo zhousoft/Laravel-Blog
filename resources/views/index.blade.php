@@ -21,7 +21,7 @@
 
     
     <!-- Custom styles for this template -->
-    
+    <link rel="stylesheet" href="https://cdn.bootcss.com/prettify/r298/prettify.min.css">
 
   </head>
 
@@ -66,12 +66,20 @@
           <h1 class="my-4">Page Heading
             <small>Secondary Text</small>
           </h1>
+          <?prettify?>
+          <pre>
+          <code>Syntax: keepalive connections;
+          Default:    —
+          Context:    upstream
+          This directive appeared in version 1.1.4.
+          </code></pre>
           @foreach($articles as $article)
             <!-- Blog Post -->
           <div class="card mb-4">
-            <img class="card-img-right" src="http://placehold.it/750x300" alt="Card image cap">
+            {{--  <img class="card-img-right" src="http://placehold.it/750x300" alt="Card image cap">  --}}
             <div class="card-body">
               <h2 class="card-title">{{ $article->title }}</h2>
+              
               <p class="card-text">{!! $article->content !!}</p>
               <a href="#" class="btn btn-primary">Read More &rarr;</a>
             </div>
@@ -210,9 +218,11 @@
       <!-- /.container -->
     </footer>
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/popper.js/1.12.5/popper.min.js"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-    
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.js"></script>
+    {{--  代码高亮  --}}
+    <script src="https://cdn.bootcss.com/prettify/r298/prettify.min.js"></script>
+    <body onload="PR.prettyPrint()">
   </body>
 
 </html>
