@@ -8,7 +8,7 @@
         <!-- Blog Entries Column -->
         <div class="col-md-8">
 
-          <h1 class="my-4">Page Heading
+          {{--  <h1 class="my-4">Page Heading
             <small>Secondary Text</small>
           </h1>
           <pre><code class="language-PHP">$a = 55;</code></pre>
@@ -17,7 +17,7 @@
           Default:    —
           Context:    upstream
           This directive appeared in version 1.1.4.
-          </pre>
+          </pre>  --}}
           @foreach($articles as $article)
             <!-- Blog Post -->
           <div class="card mb-4">
