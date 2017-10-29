@@ -10,7 +10,7 @@
 
     <title>Blog Home - Start Bootstrap Template</title>
 
-    <link href={{asset("/css/blog-home.css")}} rel="stylesheet">
+    {{--  <link href={{asset("/css/blog-home.css")}} rel="stylesheet">  --}}
     <!-- Bootstrap core CSS -->
     
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
@@ -22,7 +22,9 @@
     
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="https://cdn.bootcss.com/prettify/r298/prettify.min.css">
-
+    <link href={{asset("/css/blog-home.css")}} rel="stylesheet">
+    {{--  <link href="https://cdn.bootcss.com/prism/1.8.1/themes/prism.css" rel="stylesheet">  --}}
+    <link href="https://cdn.bootcss.com/prism/1.8.1/themes/prism-okaidia.css" rel="stylesheet">
   </head>
 
   <body>
@@ -66,13 +68,13 @@
           <h1 class="my-4">Page Heading
             <small>Secondary Text</small>
           </h1>
-          <?prettify?>
+          <pre><code class="language-PHP">$a = 55;</code></pre>
           <pre>
-          <code>Syntax: keepalive connections;
+          Syntax: keepalive connections;
           Default:    —
           Context:    upstream
           This directive appeared in version 1.1.4.
-          </code></pre>
+          </pre>
           @foreach($articles as $article)
             <!-- Blog Post -->
           <div class="card mb-4">
@@ -220,9 +222,11 @@
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.js"></script>
-    {{--  代码高亮  --}}
+    {{--  代码高亮-待整合  --}}
+    <script src="https://cdn.bootcss.com/prism/1.8.1/prism.js"></script>
+    <script src="https://cdn.bootcss.com/prism/1.8.1/components/prism-php.js"></script>
     <script src="https://cdn.bootcss.com/prettify/r298/prettify.min.js"></script>
-    <body onload="PR.prettyPrint()">
+    {{--  <body onload="PR.prettyPrint()">  --}}
   </body>
 
 </html>

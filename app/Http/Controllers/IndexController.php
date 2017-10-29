@@ -14,9 +14,9 @@ class IndexController extends Controller
         $articles = Post::all();
         $parsedown = new Parsedown();
         foreach ($articles as $article) {
-            $article->content = $parsedown->text($article->content);
+            $article->content = $parsedown->text($article->content);;
         }
         //$data = $parsedown->text($str);
-        return view('index', compact('articles'));
+        return view('front.index', compact('articles'));
    } 
 }
