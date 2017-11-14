@@ -14,7 +14,7 @@ class IndexController extends Controller
         $articles = Post::all();
         $parsedown = new Parsedown();
         foreach ($articles as $article) {
-            $article->summary = substr($article->content,0,100) . "...";
+            $article->summary = substr($article->content, 0, 100) . "...";
             $article->content = $parsedown->text($article->content);
         }
         //$data = $parsedown->text($str);

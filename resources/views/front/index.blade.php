@@ -19,7 +19,7 @@
               <h2 class="card-title">{{ $article->title }}</h2>
               
               <p class="card-text">{!! $article->summary !!}</p>
-              <a href="#" class="btn btn-primary">Read More &rarr;</a>
+              <a href="article/{{$article->id}}" class="btn btn-primary">Read More &rarr;</a>
             </div>
             <div class="card-footer text-muted">
               Posted on {{$article->created_at}}

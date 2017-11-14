@@ -15,3 +15,4 @@
 //    return view('welcome');
 //});
 Route::get('/', 'IndexController@index');
+Route::get('/article/{id}', 'ArticleController@index');
