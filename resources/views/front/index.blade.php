@@ -1,4 +1,6 @@
 @extends('layouts.front')
+
+@section('title', '见习勇者的博客')
 @section('content')
     <!-- Page Content -->
     <div class="container">

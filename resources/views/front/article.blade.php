@@ -1,4 +1,9 @@
 @extends('layouts.front')
+
+@section('title')
+    {{ $article->title }}
+@endsection
+
 @section('content')
     <!-- Page Content -->
     <div class="container">
