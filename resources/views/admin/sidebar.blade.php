@@ -15,7 +15,7 @@
         </div>
       </div>
 
-      <!-- search form (Optional) -->
+      {{--  <!-- search form (Optional) -->
       <form action="#" method="get" class="sidebar-form">
         <div class="input-group">
           <input type="text" name="q" class="form-control" placeholder="Search...">
@@ -25,14 +25,25 @@
             </span>
         </div>
       </form>
-      <!-- /.search form -->
+      <!-- /.search form -->  --}}
 
       <!-- Sidebar Menu -->
       <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">HEADER</li>
-        <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
-        <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
+        <li class="header">博客后台管理</li>
+        <li class="treeview">
+          <!-- Optionally, you can add icons to the links -->
+          <a href="#"><i class="fa fa-clipboard"></i> <span>内容管理</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+          <li class="active"><a href="#"><i class="fa fa-plus-square"></i> <span>添加分类</span></a></li>
+          <li><a href="#"><i class="fa fa-list-ul"></i> <span>分类列表</span></a></li>
+          <li><a href="#"><i class="fa fa-plus-square"></i> <span>添加文章</span></a></li>
+          <li><a href="#"><i class="fa fa-list-ul"></i> <span>文章列表</span></a></li>
+          </ul>
+        <li>
         <li class="treeview">
           <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
             <span class="pull-right-container">
