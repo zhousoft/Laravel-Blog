@@ -38,8 +38,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-          <li class="active"><a href="#"><i class="fa fa-plus-square"></i> <span>添加分类</span></a></li>
-          <li><a href="#"><i class="fa fa-list-ul"></i> <span>分类列表</span></a></li>
+          <li><a href="#"><a href="{{ url('admin/categories') }}"><i class="fa fa-list-ul"></i> <span>分类管理</span></a></li>
           <li><a href="#"><i class="fa fa-plus-square"></i> <span>添加文章</span></a></li>
           <li><a href="#"><i class="fa fa-list-ul"></i> <span>文章列表</span></a></li>
           </ul>

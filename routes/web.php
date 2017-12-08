@@ -15,5 +15,10 @@
 //    return view('welcome');
 //});
 Route::get('/', 'IndexController@index');
-Route::get('/admin', 'Admin\IndexController@index');
+Route::group(
+    ['prefix' => 'admin', 'namespace' => 'Admin'], function () {
+        Route::get('/', 'IndexController@index');
+        Route::get('categories', 'CategoryController@index');
+    }
+);
 Route::get('/article/{id}', 'ArticleController@index');
