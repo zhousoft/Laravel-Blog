@@ -12,7 +12,9 @@
 @section('content-description', "文章分类管理")
     
 @section('content')
-  分类管理
+  @foreach($data as $v)
+    {{ $v->name }}      
+  @endforeach
 @endsection
 
 @section('footer')
