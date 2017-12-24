@@ -24,7 +24,12 @@
 <tbody>  
                     
 </tbody>
-
+@foreach ($categories as $category)
+    <tr>
+        <td>{{ $category->id}}</td>
+        <td>{{ $category->name}}</td>
+    </tr>
+@endforeach
 </table>     
   
 @endsection
