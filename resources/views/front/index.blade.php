@@ -1,4 +1,6 @@
 @extends('layouts.front')
+
+@section('title', '见习勇者的博客')
 @section('content')
     <!-- Page Content -->
     <div class="container">
@@ -8,16 +10,9 @@
         <!-- Blog Entries Column -->
         <div class="col-md-8">
 
-          {{--  <h1 class="my-4">Page Heading
+          <h1 class="my-4">Page Heading
             <small>Secondary Text</small>
           </h1>
-          <pre><code class="language-PHP">$a = 55;</code></pre>
-          <pre>
-          Syntax: keepalive connections;
-          Default:    —
-          Context:    upstream
-          This directive appeared in version 1.1.4.
-          </pre>  --}}
           @foreach($articles as $article)
             <!-- Blog Post -->
           <div class="card mb-4">
@@ -25,12 +20,11 @@
             <div class="card-body">
               <h2 class="card-title">{{ $article->title }}</h2>
               
-              <p class="card-text">{!! $article->content !!}</p>
-              <a href="#" class="btn btn-primary">Read More &rarr;</a>
+              <p class="card-text">{!! $article->summary !!}</p>
+              <a href="article/{{$article->id}}" class="btn btn-primary">Read More &rarr;</a>
             </div>
             <div class="card-footer text-muted">
-              Posted on January 1, 2017 by
-              <a href="#">Start Bootstrap</a>
+              Posted on {{$article->created_at}}
             </div>
           </div>  
           @endforeach
