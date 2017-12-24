@@ -24,13 +24,6 @@
 <tbody>  
                     
 </tbody>
-<tfoot>
-<tr>
-    <th>分类id</th>
-    <th>分类名称</th>
-    <th>操作</th>
-</tr>
-</tfoot>
 
 </table>     
   
