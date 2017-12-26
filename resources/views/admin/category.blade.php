@@ -28,6 +28,11 @@
     <tr>
         <td>{{ $category->id}}</td>
         <td>{{ $category->name}}</td>
+        <td>
+            <i class="fa fa-pencil btn  btn-xs categoryEdit"></i>
+            <i class="fa fa-trash-o btn btn-xs categoryDelete"></i>
+        </td>
+       
     </tr>
 @endforeach
 </table>     
@@ -36,4 +41,5 @@
 
 @section('footer')
     @include('admin.footer')
+    <script type="text/javascript" src="{{asset('/js/category.js')}}"></script>
 @endsection
