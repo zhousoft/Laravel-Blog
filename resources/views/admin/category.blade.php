@@ -41,5 +41,8 @@
 
 @section('footer')
     @include('admin.footer')
+@endsection
+
+@section('script')
     <script type="text/javascript" src="{{asset('/js/category.js')}}"></script>
 @endsection

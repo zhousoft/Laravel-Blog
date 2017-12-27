@@ -3,7 +3,8 @@ $(function() {
     // categoryTable = $('.categoryTable').DataTable({
 
     // });
-    $('.categoryTable').on('click','i categoryEdit',function(e){
+    console.log("init");
+    $('.categoryTable').on('click','categoryEdit',function(e){
         alert("ggg");
         console.log("hahah");
     });
