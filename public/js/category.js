@@ -4,7 +4,7 @@ $(function() {
 
     // });
     console.log("init");
-    $('.categoryTable').on('click','categoryEdit',function(e){
+    $('.categoryTable').on('click','.categoryEdit',function(e){
         alert("ggg");
         console.log("hahah");
     });
